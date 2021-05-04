@@ -10,7 +10,7 @@ const DynaLink = props => {
             <a {...props}></a>
         );
     }
-    console.log("HA")
+
     return (
         <Link to={children}>{children}</Link>
     );

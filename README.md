@@ -2,6 +2,6 @@
 
 ### Local dev
 
-Export `GARDEN_LOCAL_DEV=TRUE` in your environment.
+To run the parcel client hot reload dev server on port `1234`, cd to the `client` folder and run `yarn && yarn start`.
 
-In the client folder `yarn && yarn start` to run the server on port `8080`
+To run the garden server and serve static assets on port `8080`, export `GARDEN_LOCAL_DEV=TRUE` in your environment, run `yarn build` in the client folder, then `go run main.go` in the server folder.
