@@ -10,7 +10,7 @@ COPY /server /server
 RUN CGO_ENABLED=0 go build main.go
 RUN chmod +x main
 
-FROM alpine
+FROM scratch
 COPY --from=NodeBuilder /client/dist /
 COPY --from=GoBuilder /server /
 
