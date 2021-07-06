@@ -20,6 +20,8 @@
     "@babel/preset-react": "^7.13.13",
     "@mdx-js/parcel-plugin-mdx": "^1.6.22",
     "@mdx-js/react": "^2.0.0-next.9",
+    "@parcel/resolver-glob": "^2.0.0-nightly.2338",
+    "@parcel/transformer-image": "2.0.0-beta.2",
     "@parcel/transformer-mdx": "2.0.0-beta.2",
     "babel-preset-nano-react-app": "^0.1.0",
     "parcel": "^2.0.0-alpha.3.2"
