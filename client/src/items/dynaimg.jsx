@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import _ from 'url:../../public/nes.jpg'
+import React from 'react';
+import images from '../../public/images/images.js'
 
 const DynaImg = props => {
     const { src } = props
@@ -12,15 +12,13 @@ const DynaImg = props => {
     }
 
     // internal images
-    const [image, setImage] = useState(null);
-    useEffect(() => import(src).then( file => setImage(file.default)), []);
 
     // strip src prop
     const propsCopy = {...props}
     delete propsCopy.src
 
     return (
-        <img {...propsCopy} src={image}/>
+        <img {...propsCopy} src={images[src]}/>
     );
 }
 
