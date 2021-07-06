@@ -5,14 +5,14 @@ import {Link} from 'react-router-dom';
 const DynaLink = props => {
     const {children, href} = props
     
-    if (href.includes("http")){
+    if (href.startsWith("http")){
         return (
-            <a {...props}></a>
+            <a {...props} target="_blank" rel="noopener noreferrer">{children}</a>
         );
     }
 
     return (
-        <Link to={children}>{children}</Link>
+        <Link to={href}>{children}</Link>
     );
 }
 
